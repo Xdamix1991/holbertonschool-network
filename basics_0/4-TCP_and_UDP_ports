@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
+# sctipt to show listning sockets
+
 netstat -pnltu
 netstat -pxl
