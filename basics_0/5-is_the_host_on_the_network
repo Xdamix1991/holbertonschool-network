@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# sctipt to show ping state
+
+if [ "$1" = "" ];
+then
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+	while [ "$1" ];
+	do
+		ping -c 5 "$1"
+		shift
+	done
+fi
