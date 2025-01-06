@@ -1,0 +1,3 @@
+netstat -pnltu
+netstat -xpnle | grep LISTEN
+
