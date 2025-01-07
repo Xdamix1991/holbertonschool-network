@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # script to show ip adrress on ipv4
 
-hostname -I | tr -s " " "\n"
+ifconfig | grep inet | grep -v inet6 | tr -s " " | cut -d" " -f3
