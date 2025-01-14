@@ -1,0 +1,24 @@
+# link to the blog
+
+# https://medium.com/@9308/what-happens-when-you-type-https-www-google-com-in-your-browser-and-press-enter-0199365b1c1c
+
+```mermaid
+graph TD
+    A[User types Www.google.com] --> B[DNS Resolution]
+    B --> C[Resolve to Server IP and Port]
+    C --> D[Establish Secure HTTPS Connection]
+    D --> E[Traffic passes through Firewall]
+    E --> F[Request reaches Load Balancer]
+    F --> G[Load Balancer directs to Web Server]
+    G --> H[Web Server handles the request]
+    H --> I[Web Server sends to Application Server]
+    I --> J[Application Server processes request]
+    J --> K[Application Server queries Database]
+    K --> J
+    J --> H
+    H --> F
+    F --> E
+    E --> L[Response sent back to User Browser]
+    L --> M[Browser renders the Web Page]
+
+```
